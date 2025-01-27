@@ -33,48 +33,61 @@ This repository contains scripts, notebooks, and models for detecting and classi
    cd <repository-folder>
    ```
 2. Create a virtual environment (optional but recommended):
-  ```bash
-  python -m venv env
-  source env/bin/activate   # On Windows: env\Scripts\activate\
-  ```
-3. Install Dependencies
-  ```bash
-pip install -r requirements.txt
-```
-#Modules
-##Golden PCB Change Detection
-Run the gui.py script inside the Golden_PCB_Change_Detection folder:
-bash
-```
+   ```bash
+   python -m venv env
+   source env/bin/activate   # On Windows: env\Scripts\activate
+   ```
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+---
+
+## Modules
+
+### Golden PCB Change Detection
+Run the `gui.py` script inside the `Golden_PCB_Change_Detection` folder:
+
+```bash
 python gui.py
 ```
-This GUI compares a reference PCB image to an input PCB image and highlights changes.
-##YOLO Component Detector
-The Yolo_Component_Detector.ipynb trains a YOLO model for PCB component detection.
-Configure the notebook to train, evaluate, and visualize component detection results.
-##Image Augmentation Pipeline
-Use the Image_Augmentation_Pipeline.ipynb to generate augmented images by applying:
-Flipping
-Rotation
-Cropping
-Color shifting
-##Feature Extraction Models
-The Feature_Extraction_Models.ipynb performs feature extraction for classification, such as:
-Color ratios
-Normalized RGB
-Correlation with dominant shapes
-Brightness and intensity statistics
-It trains classifiers like:
-SVM
-Random Forest
-Artificial Neural Networks (ANN)
-##CNN Model
-The CNN_Model.ipynb contains a simple CNN model for image-based component classification.
-Use this notebook to directly classify components from images without additional feature extraction.
-Dependencies
-All required libraries are listed in the requirements.txt file. Run the following command to install them:
 
-bash
-Copy
-Edit
+This GUI compares a reference PCB image to an input PCB image and highlights changes.
+
+### YOLO Component Detector
+The `Yolo_Component_Detector.ipynb` trains a YOLO model for PCB component detection. Configure the notebook to train, evaluate, and visualize component detection results.
+
+### Image Augmentation Pipeline
+Use the `Image_Augmentation_Pipeline.ipynb` to generate augmented images by applying:
+
+- Flipping
+- Rotation
+- Cropping
+- Color shifting
+
+### Feature Extraction Models
+The `Feature_Extraction_Models.ipynb` performs feature extraction for classification, such as:
+
+- Color ratios
+- Normalized RGB
+- Correlation with dominant shapes
+- Brightness and intensity statistics
+
+It trains classifiers like:
+
+- SVM
+- Random Forest
+- Artificial Neural Networks (ANN)
+
+### CNN Model
+The `CNN_Model.ipynb` contains a simple CNN model for image-based component classification. Use this notebook to directly classify components from images without additional feature extraction.
+
+---
+
+## Dependencies
+
+All required libraries are listed in the `requirements.txt` file. Run the following command to install them:
+
+```bash
 pip install -r requirements.txt
