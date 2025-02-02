@@ -29,7 +29,7 @@ This repository contains scripts, notebooks, and models for detecting and classi
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/TallBanana69/Invariance_Project/blob/main/README.md
+   git clone https://github.com/TallBanana69/Invariance_Project
    cd Invariance_Project
    ```
 2. Create a virtual environment (optional but recommended):
